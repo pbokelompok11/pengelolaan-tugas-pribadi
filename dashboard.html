@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskmate - Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #2f3338; /* Warna latar belakang gelap */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .dashboard-container {
+            background-color: #e4e4e4; /* Warna latar kotak */
+            border-radius: 15px;
+            padding: 30px 50px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .dashboard-container button {
+            width: 100%;
+            background-color: white;
+            border: 1px solid black;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .dashboard-container button:hover {
+            background-color: #d4d4d4;
+        }
+
+        .dashboard-container h1 {
+            font-size: 2rem;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>DASHBOARD</h1>
+        <button onclick="location.href='daftar_tugas.php'">Daftar Tugas</button>
+        <button onclick="location.href='kelola_tugas.php'">Kelola Tugas</button>
+        <button onclick="location.href='profile.php'">Profil</button>
+    </div>
+</body>
+</html>
